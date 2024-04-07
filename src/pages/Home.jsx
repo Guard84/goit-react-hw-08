@@ -1,10 +1,15 @@
 
 const Home = () => {
   return (
-    <div>
+    <div style={{
+      
+    }}>
       <h1 style={{
         fontSize: '36px',
-        marginBottom: '12px'
+        marginBottom: '12px',
+        borderBottom: '1px solid rgba(52, 21, 94, 0.5)',
+        lineHeight: '2',
+        letterSpacing: '0.03em'
       }}>Phonebook</h1>
       <p style={{
         lineHeight: '1.5'
