@@ -34,6 +34,7 @@
   align-items: center;
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgb(223, 228, 221);
 }
 
 .listItem:hover {
