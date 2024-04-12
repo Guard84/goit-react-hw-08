@@ -3,20 +3,26 @@
   padding: 4px 8px;
   border: 1px solid grey;
   height: 30px;
-  min-width: 80px;
+  width: 80px;
   border-radius: 2px;
   align-self: center;
   cursor: pointer;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: rgb(130, 130, 250);
+  transition: transform 0.3s ease;
 }
 
-.btn:hover {
-  background-color: rgb(194, 189, 189);
+@media (max-width: 768px) {
+  .btn {
+    width: 60px;
+    margin-left: 10px;
+  }
 }
 
+.btn:hover,
 .btn:focus {
-  background-color: rgb(194, 189, 189);
+  background-color: rgb(80, 68, 241);
+  transform: scale(1.05);
 }
 
 .text {
@@ -35,6 +41,12 @@
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: rgb(223, 228, 221);
+}
+
+@media (max-width: 768px) {
+  .listItem {
+    width: 350px;
+  }
 }
 
 .listItem:hover {

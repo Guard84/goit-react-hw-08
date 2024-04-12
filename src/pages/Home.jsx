@@ -8,6 +8,7 @@ const Home = () => {
         fontSize: '36px',
         marginBottom: '12px',
         borderBottom: '1px solid rgba(52, 21, 94, 0.5)',
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
         lineHeight: '2',
         letterSpacing: '0.03em'
       }}>Phonebook</h1>

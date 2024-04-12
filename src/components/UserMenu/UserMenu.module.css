@@ -4,8 +4,27 @@
   gap: 12px;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .wrapper {
+    white-space: nowrap;
+  }
+}
+
 .username {
   font-weight: 700;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .username {
+    font-size: 16px;
+  }
 }
 
 .btn {
@@ -17,9 +36,18 @@
   cursor: pointer;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: rgb(130, 130, 250);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 430px) {
+  .btn {
+    width: 60px;
+    padding: 2px 2px;
+  }
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: rgb(194, 189, 189);
+  background-color: rgb(80, 68, 241);
+  transform: scale(1.05);
 }
